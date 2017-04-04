@@ -21,6 +21,30 @@
 /assets - archivos estáticos.
 /tests - pruebas unitarias.
 /vendor - librerías de terceros.
-Envíame el código a través de bitbucket al usuario janezdelo@venrl.com
+Envíame el código a través de github al usuario christian130
 
 /app /src /assets /tests /vendor 
+
+
+
+From 3 data sources, create an object-oriented PHP application that can be executed from the terminal according to the following guidelines.
+
+The design of the entities (classes, methods and functions) must be open for extensions (eg in case of adding an additional source type).
+
+Use of composer for handling of libraries and autoloading (PSR4).
+
+Strict use of PSR standards.
+
+Strict use of SOLID, KISS, DRY principles.
+
+Unit testing with phpunit requires 100% code coverage and tests on different scenarios.
+
+Use of tools QA, phpcs, pdepend, phpmd.
+
+In the project README, explains and justifies methodology and design pattern used.
+
+Project structure with the following folders
+
+/ App - application execution. / Src - source code and own libraries. / Assets - static files. / Tests - unit tests. / Vendor - third-party libraries.
+
+/ App / src / assets / tests / vendor
