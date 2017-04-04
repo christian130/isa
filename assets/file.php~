@@ -1,0 +1,62 @@
+<?php
+class file
+{
+
+
+  public function __construct( $nombres )
+  {
+    if ( $nombres != null )
+    {
+      foreach( $nombres as $nombre )
+      {
+        $this->_simpleList []= $nombre;
+      }
+    }
+  }
+
+  public function agregarLista( $nombre )
+  {
+    $this->_simpleList []= $nombre;
+  }
+
+public function XMLToArrayFlat($xml, &$return, $path='', $root=false) 
+{ 
+    $children = array(); 
+    if ($xml instanceof SimpleXMLElement) { 
+        $children = $xml->children(); 
+        if ($root){ // we're at root 
+            $path .= '/'.$xml->getName(); 
+        } 
+    } 
+    if ( count($children) == 0 ){ 
+        $return[$path] = (string)$xml; 
+        return; 
+    } 
+    $seen=array(); 
+    foreach ($children as $child => $value) { 
+        $childname = ($child instanceof SimpleXMLElement)?$child->getName():$child; 
+        if ( !isset($seen[$childname])){ 
+            $seen[$childname]=0; 
+        } 
+        $seen[$childname]++; 
+        XMLToArrayFlat($value, $return, $path.'/'.$child.'['.$seen[$childname].']'); 
+    } 
+} 
+if (file_exists('archivo.xml')) {
+    $xml = simplexml_load_file('archivo.xml'); 
+    
+} else {
+    exit('Failed to open test.xml.');
+}
+public function compararCadenaBinarySafe  ($registro);  
+  {
+    $registros = array();
+    foreach( $this->_simpleList as $needle )
+    {
+      if ( $registro->compararCadenaBinarySafe( $needle ) ) // aqui hacemos una inyeccion de dependencia a lo macho
+        $registros []= $needle;
+    }
+    return $registros;
+  }
+}
+?>

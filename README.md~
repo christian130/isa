@@ -1,0 +1,25 @@
+   A partir de 3 fuentes de datos, crear una aplicación en PHP orientado a objetos que pueda ser ejecutada desde el terminal según los siguientes lineamientos.
+
+- El diseño de las entidades (clases, métodos y funciones) debe estar abierto para extensiones (ej: caso de agregar un tipo de fuente adicional).
+
+- Uso de composer para manejo de librerías y autoloading (PSR4).
+
+- Uso estricto de estándares PSR.
+
+- Uso estricto de principios SOLID, KISS, DRY.
+
+- Pruebas unitarias con phpunit, se requiere code coverage del 100% y tests sobre distintos escenarios.
+
+- Uso de herramientas QA, phpcs, pdepend, phpmd.
+
+- En el README del proyecto, explica y justifica metodología y patrón de diseño usado.
+
+- Estructura del proyecto con las siguientes carpetas
+
+/app - ejecución de la aplicación.
+/src - código fuente y librerías propias.
+/assets - archivos estáticos.
+/tests - pruebas unitarias.
+/vendor - librerías de terceros.
+Envíame el código a través de bitbucket al usuario janezdelo@venrl.com
+
